@@ -1,0 +1,12 @@
+---
+applications:
+- name: streams-consumer
+  host: streams-consumer
+  domain:
+  memory: 1G
+  instances: 1
+  path: ./target/consumer-1.0.jar
+  buildpack:
+  timeout: 180
+  env:
+    CF_TARGET:
